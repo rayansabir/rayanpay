@@ -82,7 +82,12 @@
   <h3>أريد الاستلام على هذا الرقم:</h3>
   <input type="text" id="userPhone" placeholder="ادخل رقم هاتفك" />
 
-  <button onclick="sendEmail()">إرسال</button>
+<form action="https://formspree.io/f/YOUR-ID-HERE" method="POST">
+  <input type="text" name="amount" placeholder="المبلغ" required>
+  <input type="text" name="transactionId" placeholder="رقم المعاملة" required>
+  <input type="text" name="userPhone" placeholder="رقم الهاتف" required>
+  <button type="submit">إرسال</button>
+</form>
 
   <script>
     function formatAmount() {
