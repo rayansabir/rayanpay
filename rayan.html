@@ -82,11 +82,21 @@
   <h3>أريد الاستلام على هذا الرقم:</h3>
   <input type="text" id="userPhone" placeholder="ادخل رقم هاتفك" />
 
-<form action="https://formspree.io/f/YOUR-ID-HERE" method="POST">
-  <input type="text" name="amount" placeholder="المبلغ" required>
-  <input type="text" name="transactionId" placeholder="رقم المعاملة" required>
-  <input type="text" name="userPhone" placeholder="رقم الهاتف" required>
-  <button type="submit">إرسال</button>
+  <button onclick="sendEmail()">إرسال</button>
+<form
+  action="https://formspree.io/f/mdkgvake"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
 </form>
 
   <script>
